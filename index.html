@@ -3,46 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digimon World 3 Digi-Evoluções</title>
+    <title>Digimon World 3 Evolution</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
-    <h1>Linhas de Evolução dos Digimons</h1>
-    <input type="text" id="digimonInput" placeholder="Digite o nome do Digimon">
-    <button onclick="showEvolution()">Mostrar Evoluções</button>
-    <div id="evolutionDisplay" class="evolution"></div>
+    <header>
+        <h1>Bem-vindo ao Digimon World 3 Evolution</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <script>
-        const evolutions = {
-            'Agumon': {
-                'Champion': ['Greymon: Agumon Lv.5', 'Growlmon: Greymon Lv.20', 'Kyubimon: MetalGreymon Lv.20, Spirit 300', /* outros campeões */],
-                'Ultimate': ['MetalMamemon: WarGreymon Lv.10', 'Digitamamon: Metal Garurumon Lv.20', 'Angewomon: MagnaAngemon Lv.20', /* outros ultimates */],
-                'Mega': ['Cannondramon: Armormon Lv.99', 'Gallantmon: WarGrowlmon Lv.99', 'GuardiAngemon: Kyukimon Lv.99', /* outros megas */]
-            },
-            'Guilmon': {
-                // Dados de Guilmon
-            },
-            // Adicione dados para outros Digimons
-        };
+    <section id="home" class="section">
+        <h2>Início</h2>
+        <p>Descubra o mundo dos Digimon e prepare-se para a aventura!</p>
+    </section>
 
-        function showEvolution() {
-            const digimon = document.getElementById('digimonInput').value;
-            const display = document.getElementById('evolutionDisplay');
-            display.innerHTML = '';
+    <section id="about" class="section">
+        <h2>Sobre</h2>
+        <p>Digimon World 3 é um clássico dos jogos de RPG com uma rica história e personagens icônicos.</p>
+    </section>
 
-            if (evolutions[digimon]) {
-                const evol = evolutions[digimon];
-                display.innerHTML = `<h2>${digimon}</h2>`;
-                
-                for (const [stage, list] of Object.entries(evol)) {
-                    display.innerHTML += `<h3>${stage}</h3><ul>${list.map(evo => `<li>${evo}</li>`).join('')}</ul>`;
-                }
-            } else {
-                display.innerHTML = '<p>Digimon não encontrado.</p>';
-            }
-        }
-    </script>
-    <script src="script.js"></script>
+    <section id="contact" class="section">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Digimon World 3 Evolution. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
