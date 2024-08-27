@@ -1,1 +1,19 @@
+# Normaliza todas as terminações de linha para LF
 * text=auto
+
+# Especifica arquivos binários que não devem ter alteração de terminação de linha
+*.jpg binary
+*.png binary
+*.gif binary
+*.ico binary
+
+# Especifica arquivos de texto que devem ter terminações de linha LF
+*.sh text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+
+# Evita conversão de terminações de linha para arquivos JSON e YAML
+*.json text eol=lf
+*.yaml text eol=lf
