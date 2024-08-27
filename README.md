@@ -4,7 +4,7 @@ Bem-vindo ao projeto Digimon World 3 Evolution!
 
 ## Descrição
 
-Este projeto é um site temático baseado no Digimon World 3. O objetivo é criar uma página atraente que capture a essência do jogo clássico, com seções para início, sobre e contato.
+Este projeto é para ajudar a entender as evoluções do jogo Digimon World 3. Esse site será criado totalmente por uma AI para testes e estudos.
 
 ## Estrutura do Projeto
 
